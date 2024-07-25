@@ -1,27 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
     const contentContainer = document.getElementById("contentContainer");
-    let isLoading = false;
-    let currentIndex = 0;
-    const itemsPerPage = 1;
 
     // Initial content loading and setup
-    loadMoreContent();
-    checkScroll();
-
-    // Scroll event to load more content
-    window.addEventListener("scroll", handleScroll);
+    loadContent();
 
     // Adjust image heights on load and resize
     window.addEventListener("load", adjustImageHeights);
     window.addEventListener("resize", adjustImageHeights);
 
     function createMedia(media, isHero) {
+        if (media == null) {
+          return '';
+        }
         const className = isHero ? 'hero' : 'media';
         switch (media.type) {
             case 'video':
                 return `<video src="${media.url}" class="${className} full-width" ${isHero ? 'autoplay muted' : ''}></video>`;
             case 'image':
                 return `<img src="${media.url}" class="${className} full-width">`;
+            case 'vimeo':
+                return `
+                    <div style="padding:${isHero ? '56.25% 0 0 0' : '0'}; position:relative;" class="${className} vimeo full-width">
+                        <iframe src="${media.url}" 
+                            frameborder="0" 
+                            allow="fullscreen;" 
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                            title="Diving"></iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>`
             default:
                 return '';
         }
@@ -38,40 +44,24 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     }
 
-    function loadMoreContent() {
-        if (!isLoading && currentIndex < portfolioData.length) {
-            isLoading = true;
-            const newData = portfolioData.slice(currentIndex, currentIndex + itemsPerPage);
-            newData.forEach(data => {
-                contentContainer.innerHTML += createSection(data);
-            });
-            currentIndex += itemsPerPage;
-            isLoading = false;
-            // Wait for content to render before setting up video controls
-            setTimeout(() => {
-                setupVideoControls();
-            }, 100);
-        }
-    }
-
-    function checkScroll() {
+    function loadContent() {
+        portfolioData.forEach(data => {
+            contentContainer.innerHTML += createSection(data);
+        });
+        // Wait for content to render before setting up video controls
         setTimeout(() => {
-            if (window.innerHeight >= document.body.offsetHeight) {
-                loadMoreContent();
-                checkScroll();
-            }
+            setupVideoControls();
         }, 100);
-    }
-
-    function handleScroll() {
-        if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
-            loadMoreContent();
-        }
     }
 
     function adjustImageHeights() {
         document.querySelectorAll(".row").forEach(row => {
             const media = row.querySelectorAll(".media");
+            const vimeoEmbeds = row.querySelectorAll(".vimeo");
+            if (vimeoEmbeds.length > 0) {
+              media.forEach(media => media.style.height = `${media.clientWidth * 9/16}px`);
+              return;
+            }
             const maxHeight = Array.from(media).reduce((max, media) => Math.max(max, media.offsetHeight), 0);
             media.forEach(media => media.style.height = `${maxHeight}px`);
         });
