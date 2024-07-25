@@ -7,13 +7,13 @@ const portfolioData = [
             "Almost everything is procedurally generated. All art and assets were created by me using Blender and " +
             "Substance Painter. Still a work in progress.",
         media: [
-            { type: "image", url: "content/images/diving/diving-1.png" },
-            { type: "image", url: "content/images/diving/diving-2.png" }, 
-            { type: "image", url: "content/images/diving/diving-3.png" },
-            { type: "image", url: "content/images/diving/diving-4.png" },
-            { type: "image", url: "content/images/diving/diving-5.png" },
-            { type: "image", url: "content/images/diving/diving-6.png" },
-            { type: "image", url: "content/images/diving/diving-7.png" },
+            { type: "image", url: "https://i.imgur.com/wPaHSBu.png" },
+            { type: "image", url: "https://i.imgur.com/qpFNtAM.png" },
+            { type: "image", url: "https://i.imgur.com/R9ISzhf.png" },
+            { type: "image", url: "https://i.imgur.com/v1gee7l.png" },
+            { type: "image", url: "https://i.imgur.com/amVeW2i.png" },
+            { type: "image", url: "https://i.imgur.com/38g1NuI.png" },
+            { type: "image", url: "https://i.imgur.com/PDiX7c2.png" },
         ]
     },
     {
@@ -26,10 +26,10 @@ const portfolioData = [
             "a robust automation system and a focus on vehicles to traverse the vast landscape.",
         media: [
             { type: "vimeo", url: "https://player.vimeo.com/video/989842357?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
-            { type: "image", url: "content/images/entropy/sand-1.png" },
+            { type: "image", url: "https://i.imgur.com/lakwbis.png" },
             { type: "vimeo", url: "https://player.vimeo.com/video/989861493?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
             { type: "vimeo", url: "https://player.vimeo.com/video/989862242?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
-            { type: "image", url: "content/images/entropy/sand-2.png" },
+            { type: "image", url: "https://i.imgur.com/ADDnhHr.png" },
             { type: "vimeo", url: "https://player.vimeo.com/video/989842606?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
         ]
     },
@@ -43,10 +43,10 @@ const portfolioData = [
             "and wild encounters",
         media: [
             { type: "vimeo", url: "https://player.vimeo.com/video/989842849?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
-            { type: "image", url: "content/images/untamed/arenaplacement.png" },
-            { type: "image", url: "content/images/untamed/combatnpc.png" },
-            { type: "image", url: "content/images/untamed/validarenas.png" },
-            { type: "image", url: "content/images/untamed/wildencounter.png" },
+            { type: "image", url: "https://i.imgur.com/WR4FgEj.png" },
+            { type: "image", url: "https://i.imgur.com/Zgts0c8.png" },
+            { type: "image", url: "https://i.imgur.com/TrgiqFO.png" },
+            { type: "image", url: "https://i.imgur.com/bb8HFBg.png" },
         ]
     },
     {
@@ -57,8 +57,8 @@ const portfolioData = [
             "anatomically correct Polkman, obstacles to jump over, and new updated realistic water ripple on ghosts. " +
             "Now in 3D! This game was created as an entry to the 2023 Aotearoa Game Jam by Group 13.",
         media: [
-            { type: "image", url: "content/images/pakuman/pakuman1.png" },
-            { type: "image", url: "content/images/pakuman/pakuman2.png" },
+            { type: "image", url: "https://i.imgur.com/JC9mIfk.png" },
+            { type: "image", url: "https://i.imgur.com/9xCXlNj.png" },
         ]
     },
     {
@@ -82,7 +82,7 @@ const portfolioData = [
             "it I wouldn't be half the programmer I am now.",
         media: [
             { type: "vimeo", url: "https://player.vimeo.com/video/989863169?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
-            { type: "image", url: "content/images/stickroyale/stick-royale-shop.png" },
+            { type: "image", url: "https://i.imgur.com/MCyvH7N.png" },
         ]
     },
     {
@@ -97,9 +97,9 @@ const portfolioData = [
             "technique I developed, It generates much fewer verts compared to marching cubes and allows for easy " +
             "merging of vertices. Base texture diffuse attributed to; Sophie Engel and Cara Kruger",
         media: [
-            { type: "image", url: "content/images/soilsim/colliders.png" },
+            { type: "image", url: "https://i.imgur.com/nuoZeQd.png" },
             { type: "vimeo", url: "https://player.vimeo.com/video/989842665?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
-            { type: "image", url: "content/images/soilsim/colliders1.png" },
+            { type: "image", url: "https://i.imgur.com/xZJkUo1.png" },
             { type: "vimeo", url: "https://player.vimeo.com/video/989842686?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
         ]
     },
@@ -113,25 +113,25 @@ const portfolioData = [
             "flocking sheep which helped make the sheeps movement somewhat realistic. We had so much fun making this. " +
             "Unfortunatley it was disqualified as we used Photon Networking, however, it came 1st equal in the voting.",
         media: [
-            { type: "image", url: "content/images/wolfwolfsheep/gameplay1.png" },
-            { type: "image", url: "content/images/wolfwolfsheep/gameplay2.png" },
-            { type: "image", url: "content/images/wolfwolfsheep/gameplay3.png" },
-            { type: "image", url: "content/images/wolfwolfsheep/gameplay4.png" },
+            { type: "image", url: "https://i.imgur.com/WXi5s5o.png" },
+            { type: "image", url: "https://i.imgur.com/DVs6lt9.png" },
+            { type: "image", url: "https://i.imgur.com/imeNctW.png" },
+            { type: "image", url: "https://i.imgur.com/f2ZEFyN.png" },
         ]
     },
     {
       title: "Gallery",
       description: "Here's some random cool stuff I've made",
       media: [
-        { type: "image", url: "content/images/gallery/fog.png" },
-        { type: "image", url: "content/images/gallery/render1.png" },
-        { type: "image", url: "content/images/gallery/fog-water.png" },
-        { type: "image", url: "content/images/gallery/render.png" },
+        { type: "image", url: "https://i.imgur.com/5rB6DTa.png" },
+        { type: "image", url: "https://i.imgur.com/XDTsMRg.png" },
+        { type: "image", url: "https://i.imgur.com/IHu28Dj.png" },
+        { type: "image", url: "https://i.imgur.com/q78ETxF.png" },
         { type: "vimeo", url: "https://player.vimeo.com/video/989842929?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
-        { type: "image", url: "content/images/gallery/computeexplosion.png" },
+        { type: "image", url: "https://i.imgur.com/mbIATjG.png" },
         { type: "vimeo", url: "https://player.vimeo.com/video/989842137?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
-        { type: "image", url: "content/images/gallery/render5.png" },
-        { type: "image", url: "content/images/gallery/Sexy9.png" },
+        { type: "image", url: "https://i.imgur.com/fUEJBNV.jpg" },
+        { type: "image", url: "https://i.imgur.com/v4jmo0D.png" },
       ]
     },
 ]; 
