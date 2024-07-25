@@ -130,7 +130,7 @@ const portfolioData = [
         { type: "vimeo", url: "https://player.vimeo.com/video/989842929?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
         { type: "image", url: "https://i.imgur.com/mbIATjGh.png" },
         { type: "vimeo", url: "https://player.vimeo.com/video/989842137?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
-        { type: "image", url: "https://i.imgur.com/fUEJBNV.jpg" },
+        { type: "image", url: "https://i.imgur.com/fUEJBNVh.jpg" },
         { type: "image", url: "https://i.imgur.com/v4jmo0Dh.png" },
       ]
     },
