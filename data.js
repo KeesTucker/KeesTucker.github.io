@@ -1,6 +1,31 @@
 const portfolioData = [
     {
-        title: "Aotearoa Diving Sim [UE5] [Current]",
+        title: "GPU Plant Growth Sim [Unity] [2026]",
+        github: "https://github.com/KeesTucker/splant",
+        hero: { type: "vimeo", url: "https://player.vimeo.com/video/1170572319?muted=1&autoplay=1&controls=0&controls=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479"},
+        description: "A real-time plant growth simulation built from scratch on the GPU. Cells divide, age, and connect " +
+            "with structural bonds, with up to 100,000 running simultaneously. The entire simulation lives in compute " +
+            "shaders: a 3D spatial hash table with GPU radix sorting enables O(1) neighbour queries for collision, " +
+            "bonding, and force accumulation. Concurrent physics forces (springs, bending constraints, wind turbulence, " +
+            "gravity) are applied across thousands of threads simultaneously using atomic compare-exchange operations on " +
+            "raw float bits to avoid race conditions without serialisation. The renderer is a fully custom raymarcher " +
+            "with no meshes and no rasterisation. Each frame, the simulation builds a sparse SDF brick atlas, packing " +
+            "only occupied 8x8x8 voxel bricks into a 3D texture, giving the raymarcher a fast acceleration structure " +
+            "to step through. Surface normals are extracted from the SDF gradient, and lighting forgoes traditional " +
+            "diffuse entirely in favour of a subsurface scattering approximation that marches along the light direction, " +
+            "producing soft self-shadowing as a side effect.",
+        media: [
+            { type: "image", url: "https://i.imgur.com/YfFUlpn.png" },
+            { type: "image", url: "https://i.imgur.com/7sTCorb.png" },
+            { type: "vimeo", url: "https://player.vimeo.com/video/1170572868?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
+            { type: "image", url: "https://i.imgur.com/crsmUoF.png" },
+            { type: "vimeo", url: "https://player.vimeo.com/video/1170575132?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
+            { type: "image", url: "https://i.imgur.com/jqVW9DP.png" },
+        ]
+    },
+    {
+        title: "Aotearoa Diving Sim [UE5] [2025]",
+        github: "https://github.com/KeesTucker/Aotearoa",
         hero: { type: "vimeo", url: "https://player.vimeo.com/video/989843115?muted=1&autoplay=1&controls=0&controls=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479"},
         description: "I am aiming to create a realistic diving experience simulating NZ waters. " +
             "The sea is a huge part of my life and this is my attempt to showcase that through my favourite medium. " +
@@ -17,7 +42,7 @@ const portfolioData = [
         ]
     },
     {
-        title: "Entropy Survival Game [UE5] [Current]",
+        title: "Entropy Survival Game [UE5] [2025]",
         hero: { type: "vimeo", url: "https://player.vimeo.com/video/989842230?muted=1&autoplay=1&controls=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
         description: "Entropy is a survival game that has been spear headed by a talented friend. Some friends and " +
             "I jumped on board to help out as it is quickly becoming a very impressive indie game. " +
@@ -73,6 +98,7 @@ const portfolioData = [
     },
     {
         title: "Stick Royale [Unity] [2018]",
+        github: "https://github.com/KeesTucker/Stick-Brawl",
         hero: { type: "vimeo", url: "https://player.vimeo.com/video/989842772?muted=1&autoplay=1&controls=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
         description: "Networked 2D physics-based rag-doll fighting game This was a project I started in high school at " +
             "15, I was heavily inspired by Stick Fight: The Game (and actually talked with the developer about my " +
@@ -87,6 +113,7 @@ const portfolioData = [
     },
     {
         title: "VR Soil Sim [Unity] [2021]",
+        github: "https://github.com/KeesTucker/Soil-Simulation-GPU",
         hero: { type: "vimeo", url: "https://player.vimeo.com/video/989853383?muted=1&autoplay=1&controls=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
         description: "256^3 Voxel Soil Sim running on the quest at almost full fps. Unfortunately, YouTube’s " +
             "compression butchered the footage (switch to 1440p for a better look). A vertical slice of an applied " +
@@ -123,12 +150,12 @@ const portfolioData = [
       title: "Gallery",
       description: "Here's some random cool stuff I've made",
       media: [
-        { type: "image", url: "https://i.imgur.com/5rB6DTah.png" },
-        { type: "image", url: "https://i.imgur.com/XDTsMRgh.png" },
-        { type: "image", url: "https://i.imgur.com/IHu28Djh.png" },
         { type: "image", url: "https://i.imgur.com/q78ETxFh.png" },
         { type: "vimeo", url: "https://player.vimeo.com/video/989842929?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
         { type: "image", url: "https://i.imgur.com/mbIATjGh.png" },
+        { type: "image", url: "https://i.imgur.com/5rB6DTah.png" },
+        { type: "image", url: "https://i.imgur.com/ILMMfbd.png" },
+        { type: "image", url: "https://i.imgur.com/IHu28Djh.png" },
         { type: "vimeo", url: "https://player.vimeo.com/video/989842137?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
         { type: "image", url: "https://i.imgur.com/fUEJBNVh.jpg" },
         { type: "image", url: "https://i.imgur.com/v4jmo0Dh.png" },
