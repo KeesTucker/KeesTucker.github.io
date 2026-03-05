@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const contentContainer = document.getElementById("contentContainer");
     let currentPage = 'portfolio';
 
-    preloadImages();
     updateNavStyles();
     loadContent();
 
@@ -19,16 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener("load", adjustImageHeights);
     window.addEventListener("resize", adjustImageHeights);
-
-    function preloadImages() {
-        [...portfolioData, ...hobbiesData].forEach(item => {
-            [item.hero, ...(item.media || [])].forEach(media => {
-                if (media?.type === 'image') {
-                    new Image().src = media.url;
-                }
-            });
-        });
-    }
 
     function updateNavStyles() {
         document.querySelectorAll('.nav-btn').forEach(btn => {
@@ -49,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             case 'video':
                 return `<video src="${media.url}" class="${className}" ${isHero ? 'autoplay muted' : ''}></video>`;
             case 'image':
-                return `<img src="${media.url}" class="${className}">`;
+                return `<div class="${className} img-wrapper"><div class="img-spinner"></div><img src="${media.url}" class="img-loading"></div>`;
             case 'vimeo':
                 return `
                     <div style="padding:${isHero ? '56.25% 0 0 0' : '0'}; position:relative;" class="${className} vimeo">
@@ -95,6 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
             fragment.appendChild(div.firstElementChild);
         });
         contentContainer.appendChild(fragment);
+        setupImages();
         setupVideoControls();
         setupScrollAnimations();
     }
@@ -123,6 +113,25 @@ document.addEventListener("DOMContentLoaded", () => {
         }, { threshold: 0.1 });
 
         document.querySelectorAll('.section-hidden').forEach(el => observer.observe(el));
+    }
+
+    function setupImages() {
+        contentContainer.querySelectorAll('img.img-loading').forEach(img => {
+            const markLoaded = () => {
+                img.classList.add('loaded');
+                img.previousElementSibling?.remove();
+            };
+            img.addEventListener('load', markLoaded);
+            img.addEventListener('error', markLoaded);
+            if (img.complete && img.naturalWidth > 0) {
+                markLoaded();
+            } else if (img.complete) {
+                // complete but naturalWidth is 0 — broken image or not yet painted; retry next frame
+                requestAnimationFrame(() => {
+                    if (img.naturalWidth > 0) markLoaded();
+                });
+            }
+        });
     }
 
     function setupVideoControls() {

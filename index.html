@@ -41,6 +41,41 @@
             .nav-btn.active {
                 color: rgb(255 255 255);
             }
+            .img-wrapper {
+                position: relative;
+                background: #000;
+                min-height: 200px;
+            }
+            .img-spinner {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 20px;
+                height: 20px;
+                margin: -10px 0 0 -10px;
+                border: 2px solid rgba(255,255,255,0.08);
+                border-top-color: rgba(255,255,255,0.3);
+                border-radius: 50%;
+                animation: img-spin 0.8s linear infinite;
+                pointer-events: none;
+            }
+            @keyframes img-spin {
+                to { transform: rotate(360deg); }
+            }
+            .img-loading {
+                opacity: 0;
+                transition: opacity 0.4s ease;
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            .media.img-wrapper > .img-loading {
+                height: 100%;
+                object-fit: cover;
+            }
+            .img-loading.loaded {
+                opacity: 1;
+            }
         </style>
     </head>
     <body class="bg-black text-zinc-200 text-center">
@@ -72,7 +107,7 @@
             </div>
         </div>
 
-        <script src="data.js?v=2"></script>
-        <script src="scripts.js?v=2"></script>
+        <script src="data.js?v=3"></script>
+        <script src="scripts.js?v=3"></script>
     </body>
 </html>

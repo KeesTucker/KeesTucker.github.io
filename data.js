@@ -10,12 +10,12 @@ const portfolioData = [
             "There are no meshes and no rasterisation, the renderer is a custom raymarcher built on a sparse SDF brick atlas that gets rebuilt every frame, " +
             "with subsurface scattering standing in for diffuse lighting and producing soft self-shadowing as a side effect.",
         media: [
-            { type: "image", url: "https://i.imgur.com/YfFUlpn.png" },
-            { type: "image", url: "https://i.imgur.com/7sTCorb.png" },
+            { type: "image", url: "https://i.imgur.com/YfFUlpnl.png" },
+            { type: "image", url: "https://i.imgur.com/7sTCorbl.png" },
             { type: "vimeo", url: "https://player.vimeo.com/video/1170572868?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
-            { type: "image", url: "https://i.imgur.com/crsmUoF.png" },
+            { type: "image", url: "https://i.imgur.com/crsmUoFl.png" },
             { type: "vimeo", url: "https://player.vimeo.com/video/1170575132?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
-            { type: "image", url: "https://i.imgur.com/jqVW9DP.png" },
+            { type: "image", url: "https://i.imgur.com/jqVW9DPl.png" },
         ]
     },
     {
@@ -27,13 +27,13 @@ const portfolioData = [
             "Almost everything is procedurally generated. All art and assets were created by me using Blender and " +
             "Substance Painter. Still a work in progress.",
         media: [
-            { type: "image", url: "https://i.imgur.com/wPaHSBuh.png" },
-            { type: "image", url: "https://i.imgur.com/qpFNtAMh.png" },
-            { type: "image", url: "https://i.imgur.com/R9ISzhfh.png" },
-            { type: "image", url: "https://i.imgur.com/v1gee7lh.png" },
-            { type: "image", url: "https://i.imgur.com/amVeW2ih.png" },
-            { type: "image", url: "https://i.imgur.com/38g1NuIh.png" },
-            { type: "image", url: "https://i.imgur.com/PDiX7c2h.png" },
+            { type: "image", url: "https://i.imgur.com/wPaHSBul.png" },
+            { type: "image", url: "https://i.imgur.com/qpFNtAMl.png" },
+            { type: "image", url: "https://i.imgur.com/R9ISzhfl.png" },
+            { type: "image", url: "https://i.imgur.com/v1gee7ll.png" },
+            { type: "image", url: "https://i.imgur.com/amVeW2il.png" },
+            { type: "image", url: "https://i.imgur.com/38g1NuIl.png" },
+            { type: "image", url: "https://i.imgur.com/PDiX7c2l.png" },
         ]
     },
     {
@@ -46,10 +46,10 @@ const portfolioData = [
             "a robust automation system and a focus on vehicles to traverse the vast landscape.",
         media: [
             { type: "vimeo", url: "https://player.vimeo.com/video/989842357?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
-            { type: "image", url: "https://i.imgur.com/lakwbish.png" },
+            { type: "image", url: "https://i.imgur.com/lakwbisl.png" },
             { type: "vimeo", url: "https://player.vimeo.com/video/989861493?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
             { type: "vimeo", url: "https://player.vimeo.com/video/989862242?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
-            { type: "image", url: "https://i.imgur.com/ADDnhHrh.png" },
+            { type: "image", url: "https://i.imgur.com/ADDnhHrl.png" },
             { type: "vimeo", url: "https://player.vimeo.com/video/989842606?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
         ]
     },
@@ -63,10 +63,10 @@ const portfolioData = [
             "and wild encounters",
         media: [
             { type: "vimeo", url: "https://player.vimeo.com/video/989842849?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
-            { type: "image", url: "https://i.imgur.com/WR4FgEjh.png" },
-            { type: "image", url: "https://i.imgur.com/Zgts0c8h.png" },
-            { type: "image", url: "https://i.imgur.com/TrgiqFOh.png" },
-            { type: "image", url: "https://i.imgur.com/bb8HFBgh.png" },
+            { type: "image", url: "https://i.imgur.com/WR4FgEjl.png" },
+            { type: "image", url: "https://i.imgur.com/Zgts0c8l.png" },
+            { type: "image", url: "https://i.imgur.com/TrgiqFOl.png" },
+            { type: "image", url: "https://i.imgur.com/bb8HFBgl.png" },
         ]
     },
     {
@@ -77,8 +77,8 @@ const portfolioData = [
             "anatomically correct Polkman, obstacles to jump over, and new updated realistic water ripple on ghosts. " +
             "Now in 3D! This game was created as an entry to the 2023 Aotearoa Game Jam by Group 13.",
         media: [
-            { type: "image", url: "https://i.imgur.com/JC9mIfkh.png" },
-            { type: "image", url: "https://i.imgur.com/9xCXlNjh.png" },
+            { type: "image", url: "https://i.imgur.com/JC9mIfkl.png" },
+            { type: "image", url: "https://i.imgur.com/9xCXlNjl.png" },
         ]
     },
     {
@@ -103,7 +103,7 @@ const portfolioData = [
             "it I wouldn't be half the programmer I am now.",
         media: [
             { type: "vimeo", url: "https://player.vimeo.com/video/989863169?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
-            { type: "image", url: "https://i.imgur.com/MCyvH7Nh.png" },
+            { type: "image", url: "https://i.imgur.com/MCyvH7Nl.png" },
         ]
     },
     {
@@ -119,9 +119,9 @@ const portfolioData = [
             "technique I developed, It generates much fewer verts compared to marching cubes and allows for easy " +
             "merging of vertices. Base texture diffuse attributed to; Sophie Engel and Cara Kruger",
         media: [
-            { type: "image", url: "https://i.imgur.com/nuoZeQdh.png" },
+            { type: "image", url: "https://i.imgur.com/nuoZeQdl.png" },
             { type: "vimeo", url: "https://player.vimeo.com/video/989842665?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
-            { type: "image", url: "https://i.imgur.com/xZJkUo1h.png" },
+            { type: "image", url: "https://i.imgur.com/xZJkUo1l.png" },
             { type: "vimeo", url: "https://player.vimeo.com/video/989842686?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
         ]
     },
@@ -135,24 +135,24 @@ const portfolioData = [
             "flocking sheep which helped make the sheeps movement somewhat realistic. We had so much fun making this. " +
             "Unfortunatley it was disqualified as we used Photon Networking, however, it came 1st equal in the voting.",
         media: [
-            { type: "image", url: "https://i.imgur.com/WXi5s5oh.png" },
-            { type: "image", url: "https://i.imgur.com/DVs6lt9h.png" },
-            { type: "image", url: "https://i.imgur.com/imeNctWh.png" },
-            { type: "image", url: "https://i.imgur.com/f2ZEFyNh.png" },
+            { type: "image", url: "https://i.imgur.com/WXi5s5ol.png" },
+            { type: "image", url: "https://i.imgur.com/DVs6lt9l.png" },
+            { type: "image", url: "https://i.imgur.com/imeNctWl.png" },
+            { type: "image", url: "https://i.imgur.com/f2ZEFyNl.png" },
         ]
     },
     {
       title: "Gallery",
       description: "Here's some random cool stuff I've made",
       media: [
-        { type: "image", url: "https://i.imgur.com/q78ETxFh.png" },
+        { type: "image", url: "https://i.imgur.com/q78ETxFl.png" },
         { type: "vimeo", url: "https://player.vimeo.com/video/989842929?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
-        { type: "image", url: "https://i.imgur.com/mbIATjGh.png" },
-        { type: "image", url: "https://i.imgur.com/5rB6DTah.png" },
-        { type: "image", url: "https://i.imgur.com/IHu28Djh.png" },
+        { type: "image", url: "https://i.imgur.com/mbIATjGl.png" },
+        { type: "image", url: "https://i.imgur.com/5rB6DTal.png" },
+        { type: "image", url: "https://i.imgur.com/IHu28Djl.png" },
         { type: "vimeo", url: "https://player.vimeo.com/video/989842137?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
-        { type: "image", url: "https://i.imgur.com/fUEJBNVh.jpg" },
-        { type: "image", url: "https://i.imgur.com/v4jmo0Dh.png" },
+        { type: "image", url: "https://i.imgur.com/fUEJBNVl.jpg" },
+        { type: "image", url: "https://i.imgur.com/v4jmo0Dl.png" },
       ]
     },
 ];
@@ -161,16 +161,16 @@ const hobbiesData = [
     {
         title: "Husk",
         github: "https://github.com/KeesTucker/husk",
-        hero: { type: "image", url: "https://i.imgur.com/L38o0U0.png" },
+        hero: { type: "image", url: "https://i.imgur.com/L38o0U0h.png" },
         description: "ECU hacking and real-time monitoring on my motorbikes. Reverse engineering KTMs wet paper bag security, " +
             "built a custom dashboard that connects wirelessly via Raspberry PI to my phone, and building tooling to let me flash my ECU's.",
         media: [
-            { type: "image", url: "https://i.imgur.com/bvfgCEI.png" },
+            { type: "image", url: "https://i.imgur.com/bvfgCEIl.png" },
             { type: "vimeo", url: "https://player.vimeo.com/video/1170778387?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
-            { type: "image", url: "https://i.imgur.com/mats0j0.png" },
+            { type: "image", url: "https://i.imgur.com/mats0j0l.png" },
             { type: "vimeo", url: "https://player.vimeo.com/video/1170778413?muted=0&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
-            { type: "image", url: "https://i.imgur.com/B5BguHo.png" },
-            { type: "image", url: "https://i.imgur.com/swjoF1o.png" },
+            { type: "image", url: "https://i.imgur.com/B5BguHol.png" },
+            { type: "image", url: "https://i.imgur.com/swjoF1ol.png" },
         ]
     },
     {
@@ -178,59 +178,59 @@ const hobbiesData = [
         hero: { type: "vimeo", url: "https://player.vimeo.com/video/1170778300?muted=0&autoplay=0&controls=1&loop=0&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
         description: "Bought myself a new dirt bike and right after saying I wasn't going to be paranoid and pull it apart it dropped a valve and killed itself. Currently rebuilding :(.",
         media: [
-            { type: "image", url: "https://i.imgur.com/5IcbNDc.png" },
-            { type: "image", url: "https://i.imgur.com/YeNKlcp.png" },
-            { type: "image", url: "https://i.imgur.com/fNfwtPv.png" },
-            { type: "image", url: "https://i.imgur.com/gZiOnG3.png" },
+            { type: "image", url: "https://i.imgur.com/5IcbNDcl.png" },
+            { type: "image", url: "https://i.imgur.com/YeNKlcpl.png" },
+            { type: "image", url: "https://i.imgur.com/fNfwtPvl.png" },
+            { type: "image", url: "https://i.imgur.com/gZiOnG3l.png" },
         ]
     },
     {
         title: "Native NZ Saltwater Aquariums",
-        hero: { type: "image", url: "https://i.imgur.com/8O3MVtY.png" },
+        hero: { type: "image", url: "https://i.imgur.com/8O3MVtYh.png" },
         description: "I grew up on BOAT. I like the sea. I especially like NZ natives. I love little ecosystems and caring for these little critters. Every time I see a blue eyed triplefin I light up inside. I LOVE SEAWEED.",
         media: [
-            { type: "image", url: "https://i.imgur.com/HUnUbeN.png" },
-            { type: "image", url: "https://i.imgur.com/ZtHkAjf.png" },
-            { type: "image", url: "https://i.imgur.com/u48qtAB.png" },
-            { type: "image", url: "https://i.imgur.com/8O3MVtY.png" },
-            { type: "image", url: "https://i.imgur.com/duNK4EE.png" },
-            { type: "image", url: "https://i.imgur.com/gfOkHFu.png" },
-            { type: "image", url: "https://i.imgur.com/YY0pmqs.png" },
-            { type: "image", url: "https://i.imgur.com/0H3ESj0.png" },
-            { type: "image", url: "https://i.imgur.com/KtQwnIE.png" },
-            { type: "image", url: "https://i.imgur.com/TbL74We.png" },
-            { type: "image", url: "https://i.imgur.com/NmLWaz6.png" },
-            { type: "image", url: "https://i.imgur.com/XFnqKes.png" },
-            { type: "image", url: "https://i.imgur.com/DmV2VIT.png" },
+            { type: "image", url: "https://i.imgur.com/HUnUbeNl.png" },
+            { type: "image", url: "https://i.imgur.com/ZtHkAjfl.png" },
+            { type: "image", url: "https://i.imgur.com/u48qtABl.png" },
+            { type: "image", url: "https://i.imgur.com/8O3MVtYl.png" },
+            { type: "image", url: "https://i.imgur.com/duNK4EEl.png" },
+            { type: "image", url: "https://i.imgur.com/gfOkHFul.png" },
+            { type: "image", url: "https://i.imgur.com/YY0pmqsl.png" },
+            { type: "image", url: "https://i.imgur.com/0H3ESj0l.png" },
+            { type: "image", url: "https://i.imgur.com/KtQwnIEl.png" },
+            { type: "image", url: "https://i.imgur.com/TbL74Wel.png" },
+            { type: "image", url: "https://i.imgur.com/NmLWaz6l.png" },
+            { type: "image", url: "https://i.imgur.com/XFnqKesl.png" },
+            { type: "image", url: "https://i.imgur.com/DmV2VITl.png" },
         ]
     },
     {
         title: "Husqvarna 701",
-        hero: { type: "image", url: "https://i.imgur.com/jGvBO8t.png" },
+        hero: { type: "image", url: "https://i.imgur.com/jGvBO8th.png" },
         description: "Previous owner ran it without an air filter... so our came the head, cylinder & piston. Fully rebuilt top-end. My favourite bike of all time. It's purely a supermoto these days.",
         media: [
-            { type: "image", url: "https://i.imgur.com/tC5LVLF.png" },
-            { type: "image", url: "https://i.imgur.com/CdPpZHc.png" },
-            { type: "image", url: "https://i.imgur.com/bGW5Roy.png" },
-            { type: "image", url: "https://i.imgur.com/i7yaD9N.png" },
-            { type: "image", url: "https://i.imgur.com/hgUExQs.png" },
+            { type: "image", url: "https://i.imgur.com/tC5LVLFl.png" },
+            { type: "image", url: "https://i.imgur.com/CdPpZHcl.png" },
+            { type: "image", url: "https://i.imgur.com/bGW5Royl.png" },
+            { type: "image", url: "https://i.imgur.com/i7yaD9Nl.png" },
+            { type: "image", url: "https://i.imgur.com/hgUExQsl.png" },
         ]
     },
     {
         title: "Mini ITX Workstation",
         description: "Built for game dev & gaming. RTX 3090 (now a 5070ti), 5900x, 32GB DDR4, 2TB nvme, AIO water cooled",
         media: [
-            { type: "image", url: "https://i.imgur.com/rdeUBcQ.png" },
-            { type: "image", url: "https://i.imgur.com/ITVSZjw.png" },
+            { type: "image", url: "https://i.imgur.com/rdeUBcQl.png" },
+            { type: "image", url: "https://i.imgur.com/ITVSZjwl.png" },
         ]
     },
     {
         title: "Husqvarna SM 610",
         description: "Bought an old thumper with way too many problems in University. Rebuilt it in my dorm room",
         media: [
-            { type: "image", url: "https://i.imgur.com/djlYEqf.png" },
-            { type: "image", url: "https://i.imgur.com/mpu3eWE.png" },
-            { type: "image", url: "https://i.imgur.com/sBmsVjo.png" },
+            { type: "image", url: "https://i.imgur.com/djlYEqfl.png" },
+            { type: "image", url: "https://i.imgur.com/mpu3eWEl.png" },
+            { type: "image", url: "https://i.imgur.com/sBmsVjol.png" },
         ]
     },
 ];
