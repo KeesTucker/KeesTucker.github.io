@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const contentContainer = document.getElementById("contentContainer");
     let currentPage = 'portfolio';
 
+    preloadImages();
     updateNavStyles();
     loadContent();
 
@@ -18,6 +19,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener("load", adjustImageHeights);
     window.addEventListener("resize", adjustImageHeights);
+
+    function preloadImages() {
+        [...portfolioData, ...hobbiesData].forEach(item => {
+            [item.hero, ...(item.media || [])].forEach(media => {
+                if (media?.type === 'image') {
+                    new Image().src = media.url;
+                }
+            });
+        });
+    }
 
     function updateNavStyles() {
         document.querySelectorAll('.nav-btn').forEach(btn => {
