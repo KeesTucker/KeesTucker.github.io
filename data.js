@@ -3,17 +3,12 @@ const portfolioData = [
         title: "GPU Plant Growth Sim [Unity] [2026]",
         github: "https://github.com/KeesTucker/splant",
         hero: { type: "vimeo", url: "https://player.vimeo.com/video/1170572319?muted=1&autoplay=1&controls=0&controls=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479"},
-        description: "A real-time plant growth simulation built from scratch on the GPU. Cells divide, age, and connect " +
-            "with structural bonds, with up to 100,000 running simultaneously. The entire simulation lives in compute " +
-            "shaders: a 3D spatial hash table with GPU radix sorting enables O(1) neighbour queries for collision, " +
-            "bonding, and force accumulation. Concurrent physics forces (springs, bending constraints, wind turbulence, " +
-            "gravity) are applied across thousands of threads simultaneously using atomic compare-exchange operations on " +
-            "raw float bits to avoid race conditions without serialisation. The renderer is a fully custom raymarcher " +
-            "with no meshes and no rasterisation. Each frame, the simulation builds a sparse SDF brick atlas, packing " +
-            "only occupied 8x8x8 voxel bricks into a 3D texture, giving the raymarcher a fast acceleration structure " +
-            "to step through. Surface normals are extracted from the SDF gradient, and lighting forgoes traditional " +
-            "diffuse entirely in favour of a subsurface scattering approximation that marches along the light direction, " +
-            "producing soft self-shadowing as a side effect.",
+        description: "Real-time plant growth sim running entirely on the GPU, up to 100,000 cells simultaneously dividing, ageing, and bonding together. " +
+            "I wanted to see how far I could push a fully GPU-driven simulation so everything lives in compute shaders. " +
+            "A 3D spatial hash table with GPU radix sorting handles neighbour queries for collision and bonding, " +
+            "and concurrent physics forces are accumulated across thousands of threads using atomic compare-exchange on raw float bits to sidestep race conditions without any serialisation. " +
+            "There are no meshes and no rasterisation, the renderer is a custom raymarcher built on a sparse SDF brick atlas that gets rebuilt every frame, " +
+            "with subsurface scattering standing in for diffuse lighting and producing soft self-shadowing as a side effect.",
         media: [
             { type: "image", url: "https://i.imgur.com/YfFUlpn.png" },
             { type: "image", url: "https://i.imgur.com/7sTCorb.png" },
@@ -154,11 +149,88 @@ const portfolioData = [
         { type: "vimeo", url: "https://player.vimeo.com/video/989842929?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
         { type: "image", url: "https://i.imgur.com/mbIATjGh.png" },
         { type: "image", url: "https://i.imgur.com/5rB6DTah.png" },
-        { type: "image", url: "https://i.imgur.com/ILMMfbd.png" },
         { type: "image", url: "https://i.imgur.com/IHu28Djh.png" },
         { type: "vimeo", url: "https://player.vimeo.com/video/989842137?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
         { type: "image", url: "https://i.imgur.com/fUEJBNVh.jpg" },
         { type: "image", url: "https://i.imgur.com/v4jmo0Dh.png" },
       ]
     },
-]; 
+];
+
+const hobbiesData = [
+    {
+        title: "Husk",
+        github: "https://github.com/KeesTucker/husk",
+        hero: { type: "image", url: "https://i.imgur.com/L38o0U0.png" },
+        description: "ECU hacking and real-time monitoring on my motorbikes. Reverse engineering KTMs wet paper bag security, " +
+            "built a custom dashboard that connects wirelessly via Raspberry PI to my phone, and building tooling to let me flash my ECU's.",
+        media: [
+            { type: "image", url: "https://i.imgur.com/bvfgCEI.png" },
+            { type: "vimeo", url: "https://player.vimeo.com/video/1170778387?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
+            { type: "image", url: "https://i.imgur.com/mats0j0.png" },
+            { type: "vimeo", url: "https://player.vimeo.com/video/1170778413?muted=0&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
+            { type: "image", url: "https://i.imgur.com/B5BguHo.png" },
+            { type: "image", url: "https://i.imgur.com/swjoF1o.png" },
+        ]
+    },
+    {
+        title: "Husaberg 450",
+        hero: { type: "vimeo", url: "https://player.vimeo.com/video/1170778300?muted=0&autoplay=0&controls=1&loop=0&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
+        description: "Bought myself a new dirt bike and right after saying I wasn't going to be paranoid and pull it apart it dropped a valve and killed itself. Currently rebuilding :(.",
+        media: [
+            { type: "image", url: "https://i.imgur.com/5IcbNDc.png" },
+            { type: "image", url: "https://i.imgur.com/YeNKlcp.png" },
+            { type: "image", url: "https://i.imgur.com/fNfwtPv.png" },
+            { type: "image", url: "https://i.imgur.com/gZiOnG3.png" },
+        ]
+    },
+    {
+        title: "Native NZ Saltwater Aquariums",
+        hero: { type: "image", url: "https://i.imgur.com/8O3MVtY.png" },
+        description: "I grew up on BOAT. I like the sea. I especially like NZ natives. I love little ecosystems and caring for these little critters. Every time I see a blue eyed triplefin I light up inside. I LOVE SEAWEED.",
+        media: [
+            { type: "image", url: "https://i.imgur.com/HUnUbeN.png" },
+            { type: "image", url: "https://i.imgur.com/ZtHkAjf.png" },
+            { type: "image", url: "https://i.imgur.com/u48qtAB.png" },
+            { type: "image", url: "https://i.imgur.com/8O3MVtY.png" },
+            { type: "image", url: "https://i.imgur.com/duNK4EE.png" },
+            { type: "image", url: "https://i.imgur.com/gfOkHFu.png" },
+            { type: "image", url: "https://i.imgur.com/YY0pmqs.png" },
+            { type: "image", url: "https://i.imgur.com/0H3ESj0.png" },
+            { type: "image", url: "https://i.imgur.com/KtQwnIE.png" },
+            { type: "image", url: "https://i.imgur.com/TbL74We.png" },
+            { type: "image", url: "https://i.imgur.com/NmLWaz6.png" },
+            { type: "image", url: "https://i.imgur.com/XFnqKes.png" },
+            { type: "image", url: "https://i.imgur.com/DmV2VIT.png" },
+        ]
+    },
+    {
+        title: "Husqvarna 701",
+        hero: { type: "image", url: "https://i.imgur.com/jGvBO8t.png" },
+        description: "Previous owner ran it without an air filter... so our came the head, cylinder & piston. Fully rebuilt top-end. My favourite bike of all time. It's purely a supermoto these days.",
+        media: [
+            { type: "image", url: "https://i.imgur.com/tC5LVLF.png" },
+            { type: "image", url: "https://i.imgur.com/CdPpZHc.png" },
+            { type: "image", url: "https://i.imgur.com/bGW5Roy.png" },
+            { type: "image", url: "https://i.imgur.com/i7yaD9N.png" },
+            { type: "image", url: "https://i.imgur.com/hgUExQs.png" },
+        ]
+    },
+    {
+        title: "Mini ITX Workstation",
+        description: "Built for game dev & gaming. RTX 3090 (now a 5070ti), 5900x, 32GB DDR4, 2TB nvme, AIO water cooled",
+        media: [
+            { type: "image", url: "https://i.imgur.com/rdeUBcQ.png" },
+            { type: "image", url: "https://i.imgur.com/ITVSZjw.png" },
+        ]
+    },
+    {
+        title: "Husqvarna SM 610",
+        description: "Bought an old thumper with way too many problems in University. Rebuilt it in my dorm room",
+        media: [
+            { type: "image", url: "https://i.imgur.com/djlYEqf.png" },
+            { type: "image", url: "https://i.imgur.com/mpu3eWE.png" },
+            { type: "image", url: "https://i.imgur.com/sBmsVjo.png" },
+        ]
+    },
+];

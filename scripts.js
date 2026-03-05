@@ -1,12 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
     const contentContainer = document.getElementById("contentContainer");
+    let currentPage = 'portfolio';
 
-    // Initial content loading and setup
+    updateNavStyles();
     loadContent();
 
-    // Adjust image heights on load and resize
+    document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            if (btn.dataset.page === currentPage) return;
+            currentPage = btn.dataset.page;
+            updateNavStyles();
+            contentContainer.innerHTML = '';
+            loadContent();
+            window.scrollTo(0, 0);
+        });
+    });
+
     window.addEventListener("load", adjustImageHeights);
     window.addEventListener("resize", adjustImageHeights);
+
+    function updateNavStyles() {
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.page === currentPage);
+        });
+    }
+
+    function getPageData() {
+        return currentPage === 'portfolio' ? portfolioData : hobbiesData;
+    }
 
     function createMedia(media, isHero) {
         if (media == null) {
@@ -27,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             style="position:absolute;top:0;left:0;width:100%;height:100%;"
                             title="Diving"></iframe>
                     </div>
-                    <script src="https://player.vimeo.com/api/player.js"></script>`
+                    <script src="https://player.vimeo.com/api/player.js"><\/script>`
             default:
                 return '';
         }
@@ -55,14 +76,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function loadContent() {
-        portfolioData.forEach(data => {
-            contentContainer.innerHTML += createSection(data);
+        const data = getPageData();
+        const fragment = document.createDocumentFragment();
+        data.forEach(item => {
+            const div = document.createElement('div');
+            div.innerHTML = createSection(item);
+            fragment.appendChild(div.firstElementChild);
         });
-        // Wait for content to render before setting up video controls and observers
-        setTimeout(() => {
-            setupVideoControls();
-            setupScrollAnimations();
-        }, 100);
+        contentContainer.appendChild(fragment);
+        setupVideoControls();
+        setupScrollAnimations();
     }
 
     function adjustImageHeights() {
