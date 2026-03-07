@@ -192,7 +192,6 @@ const hobbiesData = [
             { type: "image", url: "https://i.imgur.com/HUnUbeNl.png" },
             { type: "image", url: "https://i.imgur.com/ZtHkAjfl.png" },
             { type: "image", url: "https://i.imgur.com/u48qtABl.png" },
-            { type: "image", url: "https://i.imgur.com/8O3MVtYl.png" },
             { type: "image", url: "https://i.imgur.com/duNK4EEl.png" },
             { type: "image", url: "https://i.imgur.com/gfOkHFul.png" },
             { type: "image", url: "https://i.imgur.com/YY0pmqsl.png" },
@@ -207,7 +206,7 @@ const hobbiesData = [
     {
         title: "Husqvarna 701",
         hero: { type: "image", url: "https://i.imgur.com/jGvBO8th.png" },
-        description: "Previous owner ran it without an air filter... so our came the head, cylinder & piston. Fully rebuilt top-end. My favourite bike of all time. It's purely a supermoto these days.",
+        description: "Previous owner ran it without an air filter... so out came the head, cylinder & piston. Fully rebuilt top-end. My favourite bike of all time. It's purely a supermoto these days.",
         media: [
             { type: "image", url: "https://i.imgur.com/tC5LVLFl.png" },
             { type: "image", url: "https://i.imgur.com/CdPpZHcl.png" },
