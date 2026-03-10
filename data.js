@@ -159,8 +159,8 @@ const portfolioData = [
 
 const hobbiesData = [
     {
-        title: "Husk",
-        github: "https://github.com/KeesTucker/husk",
+        title: "Huskki",
+        github: "https://github.com/KeesTucker/huskki",
         hero: { type: "image", url: "https://i.imgur.com/L38o0U0h.png" },
         description: "ECU hacking and real-time monitoring on my motorbikes. Reverse engineering KTMs wet paper bag security, " +
             "built a custom dashboard that connects wirelessly via Raspberry PI to my phone, and building tooling to let me flash my ECU's.",
