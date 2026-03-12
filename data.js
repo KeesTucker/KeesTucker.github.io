@@ -3,12 +3,15 @@ const portfolioData = [
         title: "GPU Plant Growth Sim [Unity] [2026]",
         github: "https://github.com/KeesTucker/splant",
         hero: { type: "vimeo", url: "https://player.vimeo.com/video/1170572319?muted=1&autoplay=1&controls=0&controls=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479"},
-        description: "Real-time plant growth sim running entirely on the GPU, up to 100,000 cells simultaneously dividing, ageing, and bonding together. " +
+        description: "Real-time plant growth sim running entirely on the GPU, up to 100,000 cells at decent fps. " +
+            "Cells can divide, expierence forces & bonds, die etc. Eventually I want to add proper growth rules and stiffer constraints. " +
+            "Currently limited by a naive bond force function, would be really cool to get volume preserving constraints working. " +
             "I wanted to see how far I could push a fully GPU-driven simulation so everything lives in compute shaders. " +
-            "A 3D spatial hash table with GPU radix sorting handles neighbour queries for collision and bonding, " +
-            "and concurrent physics forces are accumulated across thousands of threads using atomic compare-exchange on raw float bits to sidestep race conditions without any serialisation. " +
+            "A 3D spatial hash table with GPU radix sorting (lib) handles neighbour queries for collision and bonding, " +
+            "and concurrent physics forces are accumulated across threads using atomic compare-exchange on raw float bits to sidestep race conditions with minimal serialization. " +
             "There are no meshes and no rasterisation, the renderer is a custom raymarcher built on a sparse SDF brick atlas that gets rebuilt every frame, " +
-            "with subsurface scattering standing in for diffuse lighting and producing soft self-shadowing as a side effect.",
+            "with subsurface scattering replacing diffuse lighting and producing soft self-shadowing as a side effect. " +
+            "I kind of want to just rip out the cell stuff and just feed it a point cloud generated from audio, i.e. turn it into an audio visualizer.",
         media: [
             { type: "image", url: "https://i.imgur.com/YfFUlpnl.png" },
             { type: "image", url: "https://i.imgur.com/7sTCorbl.png" },
@@ -19,8 +22,19 @@ const portfolioData = [
         ]
     },
     {
+        title: "Physics Engine for Motorbike Sim [UE5] [2025]",
+        github: "https://github.com/KeesTucker/bikegame",
+        hero: { type: "vimeo", url: "https://player.vimeo.com/video/1172810681?muted=1&autoplay=1&controls=0&controls=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479"},
+        description: "This was supposed to be a motorbike game but I got carried away building a rigid body physics engine cause Chaos is terrible with high strength springs (it explodes) " +
+            "Everything runs at 1000Hz through a custom tick subsystem, with double-precision math cause why not. " +
+            "Collision uses impulse-based resolution with a full friction model (static and dynamic) and per-contact inertia tensor projection, so angular responses to hits are physicallyish correct. " +
+            "Bodies are connected via spring constraints that use reverse Euler integration, this was the main bit, it's more stable than explicit springs at high stiffness, which matters a lot for suspension. " +
+            "Wheel colliders are a work in progress, I want to eventually use the bristle approximation technique. " +
+            "Angular springs are a bit borked and I can't really remember why.",
+        media: [],
+    },
+    {
         title: "Aotearoa Diving Sim [UE5] [2025]",
-        github: "https://github.com/KeesTucker/Aotearoa",
         hero: { type: "vimeo", url: "https://player.vimeo.com/video/989843115?muted=1&autoplay=1&controls=0&controls=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479"},
         description: "I am aiming to create a realistic diving experience simulating NZ waters. " +
             "The sea is a huge part of my life and this is my attempt to showcase that through my favourite medium. " +
