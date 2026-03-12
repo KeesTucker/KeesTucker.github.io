@@ -128,10 +128,11 @@ const portfolioData = [
             "compression butchered the footage (switch to 1440p for a better look). A vertical slice of an applied " +
             "game running on the Quest. This is my contribution to a group client project for Evans Taylor Digital. " +
             "It consists of a full voxel soil physics simulation running at a respectable framerate on the Oculus " +
-            "Quest’s measly GPU. It runs on the GPU using compute shaders and utilises a custom mesh generation " +
-            "algorithm (not marching cubes). The mesh generation is actually a hybrid of Dual Contouring and a custom " +
-            "technique I developed, It generates much fewer verts compared to marching cubes and allows for easy " +
-            "merging of vertices. Base texture diffuse attributed to; Sophie Engel and Cara Kruger",
+            "Quest’s measly GPU. It runs on the GPU using compute shaders and a custom GPU-driven isosurface algorithm " +
+            "inspired by Dual Contouring but replacing gradient-based vertex placement with a lightweight neighbor-counting " +
+            "lookup table, it produces lower vertex counts than Marching Cubes and smoother geometry than both, at the cost " +
+            "of sharp feature preservation. It's an optimization for organic, large-scale terrain. Base texture diffuse " +
+            "attributed to; Sophie Engel and Cara Kruger",
         media: [
             { type: "image", url: "https://i.imgur.com/nuoZeQdl.png" },
             { type: "vimeo", url: "https://player.vimeo.com/video/989842665?muted=1&autoplay=0&transparent=0&loop=1&autopause=0&badge=0&amp;&amp;player_id=0&amp;app_id=58479" },
